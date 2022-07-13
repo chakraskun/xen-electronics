@@ -4180,3 +4180,878 @@ Completed 200 OK in 34ms (Views: 0.6ms | ActiveRecord: 4.7ms | Allocations: 7645
   [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
   [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE DATABASE "xen-electronic-dev" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "xen-electronic-dev" ENCODING = 'unicode'[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+Started GET "/_next/webpack-hmr" for ::1 at 2022-07-13 21:08:46 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/_next/webpack-hmr"):
+  
+Started GET "/api/products" for ::1 at 2022-07-13 21:09:24 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 364)
+
+
+Started GET "/" for ::1 at 2022-07-13 21:10:28 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/chakras/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/chakras/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 327)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 21:20:16 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | Allocations: 140)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:20:34 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | Allocations: 110)
+
+
+Started GET "/service-worker.js" for 127.0.0.1 at 2022-07-13 21:20:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:32:42 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:32:42 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (4.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 54ms (Views: 15.5ms | ActiveRecord: 18.0ms | Allocations: 17849)
+
+
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 59ms (Views: 27.0ms | ActiveRecord: 12.2ms | Allocations: 20821)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:38:51 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:38:51 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 6.8ms | Allocations: 9683)
+
+
+Completed 200 OK in 34ms (Views: 34.2ms | ActiveRecord: 6.5ms | Allocations: 10140)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:42:07 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:42:07 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 2938)
+
+
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.1ms | Allocations: 4876)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:43:56 +0700
+Processing by Api::ProductsController#index as */*
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:43:56 +0700
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 2536)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 2473)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:48:51 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:48:51 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 42ms (Views: 17.7ms | ActiveRecord: 8.9ms | Allocations: 14974)
+
+
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 61ms (Views: 35.8ms | ActiveRecord: 9.6ms | Allocations: 20000)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:49:18 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:49:18 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (17.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 61ms (Views: 27.8ms | ActiveRecord: 17.8ms | Allocations: 3057)
+
+
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 1.4ms | Allocations: 5116)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:50:46 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:50:46 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 47ms (Views: 19.1ms | ActiveRecord: 8.1ms | Allocations: 14974)
+
+
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 67ms (Views: 39.8ms | ActiveRecord: 8.4ms | Allocations: 20021)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:18 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.6ms | Allocations: 2550)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:25 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:25 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 1.9ms | Allocations: 3008)
+
+
+  [1m[36mProduct Load (5.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 5.5ms | Allocations: 5153)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:42 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:49 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:51 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:51:51 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 1.0ms | Allocations: 3072)
+
+
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.9ms | Allocations: 5271)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:52:30 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:52:30 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.7ms | Allocations: 2576)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:03 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:03 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.9ms | Allocations: 2538)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:11 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 1.0ms | Allocations: 2656)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:11 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.7ms | Allocations: 2475)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:25 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.6ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:25 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.7ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:34 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:36 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:53:36 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.2ms | Allocations: 2890)
+
+
+  [1m[36mProduct Load (5.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 7.1ms | ActiveRecord: 5.8ms | Allocations: 5134)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:54:42 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:54:42 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:54:42 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.9ms | Allocations: 2625)
+
+
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.8ms | Allocations: 3074)
+
+
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 5270)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:55:12 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.9ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:55:35 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.6ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:55:37 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:57:33 +0700
+Processing by Api::ProductsController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:57:33 +0700
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 1.6ms | Allocations: 2966)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:57:33 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:57:33 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.6ms | Allocations: 2610)
+
+
+Processing by Api::CategoriesController#index as */*
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 450)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:57:44 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:57:44 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:57:44 +0700
+Processing by Api::ProductsController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:57:44 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.4ms | Allocations: 3369)
+
+
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 3.3ms | Allocations: 5314)
+
+
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 126)
+
+
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:58:41 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.8ms | Allocations: 2474)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:58:41 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:58:41 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::CategoriesController#index as */*
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Filter chain halted as :authorized rendered or redirected
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 648)
+
+
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.0ms | Allocations: 3021)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:58:41 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:59:05 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 2474)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:59:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 21:59:06 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 21:59:06 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 2545)
+
+
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:04:40 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:04:40 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 3995)
+
+
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 7.5ms | Allocations: 8275)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:04:41 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 287)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:04:41 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 127)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:02 +0700
+Processing by Api::ProductsController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:02 +0700
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.6ms | Allocations: 2751)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 40ms (Views: 3.2ms | ActiveRecord: 10.1ms | Allocations: 12120)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:09 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 2501)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:09 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:09 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:09 +0700
+Processing by Api::ProductsController#index as */*
+Processing by Api::CategoriesController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 3246)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+Processing by Api::CategoriesController#index as */*
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 2.9ms | ActiveRecord: 1.8ms | Allocations: 6574)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 4.3ms | Allocations: 7369)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:14 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:14 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:14 +0700
+Processing by Api::CategoriesController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:14 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.1ms | Allocations: 3305)
+
+
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 6.0ms | ActiveRecord: 2.3ms | Allocations: 5516)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.8ms | Allocations: 2578)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:39 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2474)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:39 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 2150)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:39 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:39 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2618)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:49 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2474)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:49 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 2149)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:51 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:51 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:06:51 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.7ms | Allocations: 2417)
+
+
+Processing by Api::ProductsController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:06:51 +0700
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2679)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Processing by Api::CategoriesController#index as */*
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 3167)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.8ms | Allocations: 4293)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:01 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 2683)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:01 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.8ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:05 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:05 +0700
+Processing by Api::CategoriesController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.9ms | Allocations: 3053)
+
+
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 1.9ms | Allocations: 5214)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:08 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:08 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:08 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:08 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2742)
+
+
+Processing by Api::ProductsController#index as */*
+Processing by Api::CategoriesController#index as */*
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 1.1ms | Allocations: 3108)
+
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 2.4ms | Allocations: 5022)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:18 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 2610)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:18 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.6ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:08:31 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2709)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:08:31 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:10:41 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:10:41 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.6ms | Allocations: 2667)
+
+
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 2474)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:10:42 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.9ms | Allocations: 2404)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:10:42 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:11:51 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 2581)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:11:51 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:13:33 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:13:33 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 2567)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:13:36 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 2716)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:13:36 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:13:40 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:13:40 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:13:40 +0700
+Processing by Api::ProductsController#index as */*
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:13:40 +0700
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2727)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.9ms | Allocations: 2311)
+
+
+Processing by Api::CategoriesController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.2ms | Allocations: 3603)
+
+
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.9ms | Allocations: 4950)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:14:22 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:14:22 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2532)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 2149)
+
+
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:14:25 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 2726)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:14:25 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 2148)
+
+
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:14:29 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:14:29 +0700
+Started GET "/api/products" for 127.0.0.1 at 2022-07-13 22:14:29 +0700
+Started GET "/api/categories" for 127.0.0.1 at 2022-07-13 22:14:29 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.8ms | Allocations: 2348)
+
+
+Processing by Api::ProductsController#index as */*
+Processing by Api::ProductsController#index as */*
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.7ms | Allocations: 2985)
+
+
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 1.1ms | Allocations: 5230)
+
+
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 2148)
+
+
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
