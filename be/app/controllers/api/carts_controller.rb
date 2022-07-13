@@ -17,7 +17,12 @@ module Api
     end
 
     def add_item
-      product = Product.find(params[:product_id])
+      product = Product.find_by(id: params[:product_id])
+      unless product.present?
+        return render json: ::Dto::BaseResponse.bad_request(
+          message: 'Product not found'
+        )
+      end
       item = current_user.carts.find_or_initialize_by(product_id: product.id)
       if item.persisted?
         item.quantity += 1
@@ -32,6 +37,11 @@ module Api
     def deduct_item
       cart = current_user.carts
       item = cart.find_by(product_id: params[:product_id])
+      unless item.present?
+        return render json: ::Dto::BaseResponse.bad_request(
+          message: 'Product not found in cart'
+        )
+      end
       if item.quantity > 1
         item.quantity -= 1
         item.save

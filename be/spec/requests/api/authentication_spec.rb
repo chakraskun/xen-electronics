@@ -4,6 +4,7 @@ RSpec.describe 'api/authentication', type: :request do
   path '/api/auth/login' do
     
     post('login authentication') do
+      tags 'Authentication'
       consumes 'application/json'
       parameter name: :user, in: :body, schema: {
         type: :object,

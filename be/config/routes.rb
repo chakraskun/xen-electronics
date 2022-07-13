@@ -11,8 +11,8 @@ Rails.application.routes.draw do
     get 'categories', to: 'categories#index'
     get 'products', to: 'products#index'
     get 'carts', to: 'carts#index'
-    post 'cart/add', to: 'carts#add_item'
-    post 'cart/deduct', to: 'carts#deduct_item'
-    delete 'cart/checkout', to: 'carts#checkout'
+    post 'carts/add', to: 'carts#add_item'
+    post 'carts/deduct', to: 'carts#deduct_item'
+    delete 'carts/checkout', to: 'carts#checkout'
   end
 end

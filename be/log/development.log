@@ -2511,3 +2511,1672 @@ Processing by Api::CartsController#checkout as */*
 Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 10.8ms | Allocations: 25388)
 
 
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:22 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 24ms (Views: 3.5ms | ActiveRecord: 5.6ms | Allocations: 15899)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:27 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 128)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:28 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:29 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:29 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:30 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 14:34:33 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 2247)
+
+
+Started GET "/" for ::1 at 2022-07-13 14:35:16 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/chakras/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/chakras/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 540)
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3542)
+
+
+Started GET "/api-docs" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 14:35:20 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:31:20 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:31:21 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:31:21 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:31:21 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:31:21 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:31:21 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:31:21 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (26.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "xen-electronic-dev"[0m
+  [1m[35m (193.4ms)[0m  [1m[35mCREATE DATABASE "xen-electronic-dev" ENCODING = 'unicode'[0m
+  [1m[35mSQL (15.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "pgcrypto"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts" CASCADE[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "user_id" uuid, "product_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "quantity" integer DEFAULT 1)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE INDEX "index_carts_on_product_id" ON "carts" ("product_id")[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE INDEX "index_carts_on_user_id" ON "carts" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories" CASCADE[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying, "image_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "products" CASCADE[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" character varying, "price_cents" decimal DEFAULT 0.0 NOT NULL, "price_currency" character varying DEFAULT 'IDR' NOT NULL, "image_url" character varying, "stock" integer DEFAULT 0 NOT NULL, "category_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "email" character varying NOT NULL, "encrypted_password" character varying(128) NOT NULL, "confirmation_token" character varying(128), "remember_token" character varying(128) NOT NULL)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "carts" ADD CONSTRAINT "fk_rails_916f2a1419"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "carts" ADD CONSTRAINT "fk_rails_ea59a35211"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "products" ADD CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220712095224)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220712033335),
+(20220712034111),
+(20220712034343),
+(20220712034458),
+(20220712084609);
+
+[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-07-13 08:32:56.329423"], ["updated_at", "2022-07-13 08:32:56.329423"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-07-13 08:32:56.334818"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "5ebe30eb455ddaa1077d1491430e00d1a3fc1b65"], ["created_at", "2022-07-13 08:32:56.339023"], ["updated_at", "2022-07-13 08:32:56.339023"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:32:59 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:32:59 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:32:59 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:32:59 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:32:59 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:32:59 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:33:50 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:33:50 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:33:50 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:33:50 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:33:51 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:33:51 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:35:43 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:35:43 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:35:43 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:35:43 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:35:43 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:35:43 +0700
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:03 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 28ms (Views: 0.5ms | ActiveRecord: 4.1ms | Allocations: 4208)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:06 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 588)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:07 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 597)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:07 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 601)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:08 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:08 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:08 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:09 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:09 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:29 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 587)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:36:29 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:36:29 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:36:29 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:36:29 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:36:30 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:36:30 +0700
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:33 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"string", "password"=>"[FILTERED]", "authentication"=>{"email"=>"string", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "string"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 587)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:36:43 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 587)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:6:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:8:in `block (2 levels) in <main>'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:8:in `block (2 levels) in <main>'
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password", "confirmation_token", "remember_token") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-07-13 08:37:07.649129"], ["updated_at", "2022-07-13 08:37:07.649129"], ["email", "test@gmail.com"], ["encrypted_password", "[FILTERED]"], ["confirmation_token", "[FILTERED]"], ["remember_token", "[FILTERED]"]]
+  ↳ lib/tasks/dummies.rake:8:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:8:in `block (2 levels) in <main>'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:37:15 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 219ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1040)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:37:26 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:37:30 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:37:34 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:37:35 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:37:54 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 365)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:02 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:04 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:04 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:05 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:38:22 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 5422)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:38:27 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 849)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:38:32 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 4.3ms | Allocations: 8531)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:38:33 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.9ms | Allocations: 1553)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:38 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 822)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:38:50 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 3761)
+
+
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "home_audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:22:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "home_audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "home_audio"], ["image_url", "https://images.tokopedia.net/img/cache/500-square/product-1/2018/8/30/25596510/25596510_b0fbac63-3ec1-4545-8dac-235df0f778f3_700_442.jpg"], ["created_at", "2022-07-13 08:39:15.654396"], ["updated_at", "2022-07-13 08:39:15.654396"]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "kitchen_appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:22:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "kitchen_appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "kitchen_appliances"], ["image_url", "https://www.lux-review.com/wp-content/uploads/2022/01/Kitchen-Appliances.jpg"], ["created_at", "2022-07-13 08:39:15.660591"], ["updated_at", "2022-07-13 08:39:15.660591"]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:22:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "smartphone"], ["image_url", "https://asset.kompas.com/crops/dgtxSSEPl9_0q8aMRY0G1F70U9E=/141x0:1221x720/750x500/data/photo/2021/07/07/60e55baa134ab.jpeg"], ["created_at", "2022-07-13 08:39:15.677207"], ["updated_at", "2022-07-13 08:39:15.677207"]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:22:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "computer"], ["image_url", "https://blog.atome.id/wp-content/uploads/2021/07/Yuk-Simak-Kisaran-Harga-Personal-Computer.jpg"], ["created_at", "2022-07-13 08:39:15.717709"], ["updated_at", "2022-07-13 08:39:15.717709"]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:22:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "camera"], ["image_url", "https://i1.adis.ws/i/canon/eos-r7-lifestyle_c604337a3b374a94a080d40b43f3a920?$70-30-header-4by3-dt-jpg$"], ["created_at", "2022-07-13 08:39:15.724666"], ["updated_at", "2022-07-13 08:39:15.724666"]]
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:24:in `block (3 levels) in <main>'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "home_audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "home_audio"], ["id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-audio"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "98542200.0"], ["price_currency", "IDR"], ["image_url", "https://images.tokopedia.net/img/cache/500-square/product-1/2018/8/30/25596510/25596510_b0fbac63-3ec1-4545-8dac-235df0f778f3_700_442.jpg"], ["stock", 23], ["category_id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["created_at", "2022-07-13 08:39:24.196821"], ["updated_at", "2022-07-13 08:39:24.196821"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-audio-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "home_audio"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "home_audio"], ["id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-audio-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-audio-2"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "63214600.0"], ["price_currency", "IDR"], ["image_url", "https://images.tokopedia.net/img/cache/500-square/product-1/2018/8/30/25596510/25596510_b0fbac63-3ec1-4545-8dac-235df0f778f3_700_442.jpg"], ["stock", 13], ["category_id", "f4507552-2b21-4421-8173-ccf380ee1e1e"], ["created_at", "2022-07-13 08:39:24.207133"], ["updated_at", "2022-07-13 08:39:24.207133"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-kitchen-appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "kitchen_appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "kitchen_appliances"], ["id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-kitchen-appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-kitchen-appliances"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "95058200.0"], ["price_currency", "IDR"], ["image_url", "https://www.lux-review.com/wp-content/uploads/2022/01/Kitchen-Appliances.jpg"], ["stock", 13], ["category_id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["created_at", "2022-07-13 08:39:24.216192"], ["updated_at", "2022-07-13 08:39:24.216192"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-kitchen-appliances-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "kitchen_appliances"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "kitchen_appliances"], ["id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-kitchen-appliances-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-kitchen-appliances-2"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "83822000.0"], ["price_currency", "IDR"], ["image_url", "https://www.lux-review.com/wp-content/uploads/2022/01/Kitchen-Appliances.jpg"], ["stock", 28], ["category_id", "bbbf6059-281f-4318-80db-b7f8b3349501"], ["created_at", "2022-07-13 08:39:24.224491"], ["updated_at", "2022-07-13 08:39:24.224491"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "smartphone"], ["id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-smartphone"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "98966200.0"], ["price_currency", "IDR"], ["image_url", "https://asset.kompas.com/crops/dgtxSSEPl9_0q8aMRY0G1F70U9E=/141x0:1221x720/750x500/data/photo/2021/07/07/60e55baa134ab.jpeg"], ["stock", 22], ["category_id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["created_at", "2022-07-13 08:39:24.232489"], ["updated_at", "2022-07-13 08:39:24.232489"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-smartphone-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "smartphone"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "smartphone"], ["id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-smartphone-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-smartphone-2"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "83887600.0"], ["price_currency", "IDR"], ["image_url", "https://asset.kompas.com/crops/dgtxSSEPl9_0q8aMRY0G1F70U9E=/141x0:1221x720/750x500/data/photo/2021/07/07/60e55baa134ab.jpeg"], ["stock", 18], ["category_id", "9836f2f6-2ad2-4d8e-b7d6-2649668c1905"], ["created_at", "2022-07-13 08:39:24.240457"], ["updated_at", "2022-07-13 08:39:24.240457"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "computer"], ["id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-computer"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "70124800.0"], ["price_currency", "IDR"], ["image_url", "https://blog.atome.id/wp-content/uploads/2021/07/Yuk-Simak-Kisaran-Harga-Personal-Computer.jpg"], ["stock", 33], ["category_id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["created_at", "2022-07-13 08:39:24.248923"], ["updated_at", "2022-07-13 08:39:24.248923"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-computer-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "computer"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "computer"], ["id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-computer-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-computer-2"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "60542900.0"], ["price_currency", "IDR"], ["image_url", "https://blog.atome.id/wp-content/uploads/2021/07/Yuk-Simak-Kisaran-Harga-Personal-Computer.jpg"], ["stock", 33], ["category_id", "a73c2348-2abc-45a8-82df-f91bf5b0ca08"], ["created_at", "2022-07-13 08:39:24.256232"], ["updated_at", "2022-07-13 08:39:24.256232"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "camera"], ["id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-camera"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "52261200.0"], ["price_currency", "IDR"], ["image_url", "https://i1.adis.ws/i/canon/eos-r7-lifestyle_c604337a3b374a94a080d40b43f3a920?$70-30-header-4by3-dt-jpg$"], ["stock", 12], ["category_id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["created_at", "2022-07-13 08:39:24.264037"], ["updated_at", "2022-07-13 08:39:24.264037"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-camera-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:46:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT $2[0m  [["name", "camera"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:50:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."name" = $1 AND "categories"."id" != $2 LIMIT $3[0m  [["name", "camera"], ["id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "xen-camera-2"], ["LIMIT", 1]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_cents", "price_currency", "image_url", "stock", "category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "xen-camera-2"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit"], ["price_cents", "93844400.0"], ["price_currency", "IDR"], ["image_url", "https://i1.adis.ws/i/canon/eos-r7-lifestyle_c604337a3b374a94a080d40b43f3a920?$70-30-header-4by3-dt-jpg$"], ["stock", 39], ["category_id", "f41d2bdd-c203-4570-aa81-e563ad7eb118"], ["created_at", "2022-07-13 08:39:24.271520"], ["updated_at", "2022-07-13 08:39:24.271520"]]
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ lib/tasks/dummies.rake:55:in `block (4 levels) in <main>'
+Started GET "/api/products" for ::1 at 2022-07-13 15:39:27 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 3.9ms | Allocations: 7614)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:39:31 +0700
+Processing by Api::CategoriesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/api/categories_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 3.5ms | Allocations: 3198)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 15:39:44 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 116)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:39:46 +0700
+Started GET "/api/categories" for ::1 at 2022-07-13 15:39:52 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:02 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:03 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:03 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:03 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:03 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:04 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:06 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:06 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:06 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:40:47 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 31787ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 43556)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:41:21 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 69751ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 42930)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 15:42:45 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 211ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 5538)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:42:59 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 5549ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 14679)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:43:42 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:43:49 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 236)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:43:50 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:43:53 +0700
+Started GET "/api/categories" for ::1 at 2022-07-13 15:43:57 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:43:59 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 15:44:10 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 147510ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 16159)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:42 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:42 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:42 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:51 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:52 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:53 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:46:54 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:46:54 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:11 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:12 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:50:13 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:45 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:45 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:46 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:51:47 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:51:48 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:51:48 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:52:11 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:52:11 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:52:11 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:52:11 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:52:11 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:52:11 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:52:21 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:52:21 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:52:21 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:52:21 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:52:22 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:52:22 +0700
+Started GET "/api-docs/v1/locahost/api/categories" for ::1 at 2022-07-13 15:52:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api-docs/v1/locahost/api/categories"):
+  
+Started POST "/api-docs/v1/locahost/api/auth/login" for ::1 at 2022-07-13 15:53:16 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/api-docs/v1/locahost/api/auth/login"):
+  
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:30 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:30 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:37 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:38 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:54:39 +0700
+Started GET "/api-docs/v1/locahost/api/categories" for ::1 at 2022-07-13 15:54:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api-docs/v1/locahost/api/categories"):
+  
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 15:55:36 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 15:55:36 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 15:55:36 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 15:55:36 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 15:55:37 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 15:55:37 +0700
+Started GET "/api/categories" for ::1 at 2022-07-13 15:55:39 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 4262ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 41734)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 16:11:29 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 212ms (Views: 0.3ms | ActiveRecord: 8.5ms | Allocations: 14748)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:39 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 233)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:40 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:41 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:41 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:42 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:42 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:42 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:11:58 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:12:05 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:13:18 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 20542ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 12579)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:17:34 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:17:34 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:19:05 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:19:05 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:19:05 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:19:05 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:19:06 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:19:06 +0700
+Started GET "/api/categories" for ::1 at 2022-07-13 16:19:20 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 16:19:31 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 228ms (Views: 0.3ms | ActiveRecord: 7.8ms | Allocations: 5346)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:19:43 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 116)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:19:43 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/categories" for ::1 at 2022-07-13 16:19:46 +0700
+Processing by Api::CategoriesController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:00 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:02 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:03 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:03 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:04 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:04 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:05 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:20:05 +0700
+Processing by Api::ProductsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:22:52 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:22:52 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:22:52 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:22:52 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:22:53 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:22:53 +0700
+Started POST "/api/auth/login" for ::1 at 2022-07-13 16:23:08 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 210ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1019)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:23:18 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 50ms (Views: 21.3ms | ActiveRecord: 6.7ms | Allocations: 11039)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:24:30 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:24:30 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:24:30 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:24:30 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:24:30 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:24:30 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:24:36 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:24:36 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:24:36 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:24:36 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:24:36 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:24:36 +0700
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:27:42 +0700
+Started GET "/api/carts" for ::1 at 2022-07-13 16:27:46 +0700
+Processing by Api::CartsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Started POST "/api/auth/login" for ::1 at 2022-07-13 16:28:05 +0700
+Processing by Api::AuthenticationController#login as */*
+  Parameters: {"email"=>"test@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/authentication_controller.rb:6:in `login'
+Completed 200 OK in 228ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1005)
+
+
+Started GET "/api/carts" for ::1 at 2022-07-13 16:28:18 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 6606)
+
+
+Started GET "/api/carts" for ::1 at 2022-07-13 16:28:21 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2146)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:28:30 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 1.4ms | Allocations: 3054)
+
+
+Started POST "/api/carts" for ::1 at 2022-07-13 16:28:43 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/api/carts"):
+  
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:29:43 +0700
+Started GET "/api/carts" for ::1 at 2022-07-13 16:29:48 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2071)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:29:57 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 1.0ms | Allocations: 3018)
+
+
+Started POST "/api/cart" for ::1 at 2022-07-13 16:30:04 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/api/cart"):
+  
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/cart/add" for ::1 at 2022-07-13 16:35:57 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/cart/add"):
+  
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:36:06 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 4678)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:36:07 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "29bd1f82-7d0a-41f5-bc46-5acf96f8e573"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 971)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:36:25 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 404 Not Found in 19ms (ActiveRecord: 3.5ms | Allocations: 9697)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=e7a17c55-304a-4c61-8f12-e883a73322d411111):
+  
+app/controllers/api/carts_controller.rb:20:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:36:26 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1344)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=e7a17c55-304a-4c61-8f12-e883a73322d411111):
+  
+app/controllers/api/carts_controller.rb:20:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:36:58 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Completed 500 Internal Server Error in 20ms (Views: 0.2ms | ActiveRecord: 6.6ms | Allocations: 10659)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+      item = current_user.carts.find_or_initialize_by(product_id: product.id)
+                                                                         ^^^):
+  
+app/controllers/api/carts_controller.rb:26:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:37:14 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Completed 500 Internal Server Error in 44395ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 72291)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/api/carts_controller.rb:29:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:38:04 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Completed 500 Internal Server Error in 33ms (Views: 0.2ms | ActiveRecord: 7.4ms | Allocations: 17133)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+      item = current_user.carts.find_or_initialize_by(product_id: product.id)
+                                                                         ^^^):
+  
+app/controllers/api/carts_controller.rb:26:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:38:26 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+Completed 500 Internal Server Error in 19ms (Views: 0.1ms | ActiveRecord: 7.2ms | Allocations: 9650)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+      item = current_user.carts.find_or_initialize_by(product_id: product.id)
+                                                                         ^^^):
+  
+app/controllers/api/carts_controller.rb:26:in `add_item'
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:38:57 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 6.4ms | Allocations: 7667)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:39:11 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.1ms | Allocations: 7715)
+
+
+Started POST "/api/cart" for ::1 at 2022-07-13 16:39:59 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/api/cart"):
+  
+Started GET "/api-docs/index.html" for ::1 at 2022-07-13 16:40:10 +0700
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2022-07-13 16:40:10 +0700
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2022-07-13 16:40:10 +0700
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2022-07-13 16:40:10 +0700
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2022-07-13 16:40:11 +0700
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2022-07-13 16:40:11 +0700
+Started GET "/api/carts" for ::1 at 2022-07-13 16:40:18 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 9.0ms | Allocations: 8954)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:40:33 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 8.7ms | ActiveRecord: 6.4ms | Allocations: 9544)
+
+
+Started POST "/api/cart/create" for ::1 at 2022-07-13 16:40:39 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/api/cart/create"):
+  
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:45:29 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 7.4ms | Allocations: 7412)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:46:15 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d411111"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 6.0ms | Allocations: 7757)
+
+
+Started GET "/api/carts" for ::1 at 2022-07-13 16:46:23 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 2706)
+
+
+Started GET "/api/carts" for ::1 at 2022-07-13 16:58:38 +0700
+Processing by Api::CartsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+Completed 200 OK in 35ms (Views: 0.2ms | ActiveRecord: 5.1ms | Allocations: 11148)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:58:44 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "e7a17c55-304a-4c61-8f12-e883a73322d4"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 3494)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:58:45 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "e7a17c55-304a-4c61-8f12-e883a73322d4"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1342)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:58:46 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4", "cart"=>{"product_id"=>"e7a17c55-304a-4c61-8f12-e883a73322d4"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "e7a17c55-304a-4c61-8f12-e883a73322d4"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1297)
+
+
+Started GET "/api/products" for ::1 at 2022-07-13 16:58:52 +0700
+Processing by Api::ProductsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/api/products_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 5.3ms | Allocations: 5346)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:59:00 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"f10f4bc9-4fae-4bda-bda4-30bd5666b92b", "cart"=>{"product_id"=>"f10f4bc9-4fae-4bda-bda4-30bd5666b92b"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 AND "carts"."product_id" = $2 LIMIT $3[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["product_id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:26:in `add_item'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:32:in `add_item'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/carts_controller.rb:32:in `add_item'
+  [1m[36mCart Create (1.3ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "product_id", "created_at", "updated_at", "quantity") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["product_id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["created_at", "2022-07-13 09:59:00.915319"], ["updated_at", "2022-07-13 09:59:00.915319"], ["quantity", 1]]
+  ↳ app/controllers/api/carts_controller.rb:32:in `add_item'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/carts_controller.rb:32:in `add_item'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:9:in `block in index'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 6.5ms | Allocations: 12330)
+
+
+Started POST "/api/carts/add" for ::1 at 2022-07-13 16:59:03 +0700
+Processing by Api::CartsController#add_item as */*
+  Parameters: {"product_id"=>"f10f4bc9-4fae-4bda-bda4-30bd5666b92b", "cart"=>{"product_id"=>"f10f4bc9-4fae-4bda-bda4-30bd5666b92b"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:20:in `add_item'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 AND "carts"."product_id" = $2 LIMIT $3[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["product_id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:26:in `add_item'
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:29:in `add_item'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/carts_controller.rb:29:in `add_item'
+  [1m[36mCart Update (0.5ms)[0m  [1m[33mUPDATE "carts" SET "updated_at" = $1, "quantity" = $2 WHERE "carts"."id" = $3[0m  [["updated_at", "2022-07-13 09:59:03.388102"], ["quantity", 2], ["id", "ce45a812-0064-4174-92c1-69ea9f5d50fb"]]
+  ↳ app/controllers/api/carts_controller.rb:29:in `add_item'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/carts_controller.rb:29:in `add_item'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:29:in `current_user'
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1[0m  [["user_id", "c1238dd4-6df2-4bd2-a77f-b66647993f43"]]
+  ↳ app/controllers/api/carts_controller.rb:8:in `map'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", "f10f4bc9-4fae-4bda-bda4-30bd5666b92b"], ["LIMIT", 1]]
+  ↳ app/controllers/api/carts_controller.rb:9:in `block in index'
+Completed 200 OK in 34ms (Views: 0.6ms | ActiveRecord: 4.7ms | Allocations: 7645)
+
+
+  [1m[36mCart Count (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
