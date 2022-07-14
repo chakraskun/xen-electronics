@@ -10,7 +10,7 @@ module Api
       end
       render json: ::Dto::BaseResponse.ok(
         data: {
-          cart: user_cart.as_json(include: :product),
+          cart: user_cart.sort_by(&:created_at).reverse.as_json(include: :product),
           total_price: cart_price
         },
       )
