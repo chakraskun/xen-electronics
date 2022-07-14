@@ -31,6 +31,14 @@ RSpec.configure do |config|
               default: 'http://localhost:3000'
             }
           }
+        },
+        {
+          url: 'https://xen-electronic-backend.herokuapp.com/',
+          variables: {
+            defaultHost: {
+              default: 'https://xen-electronic-backend.herokuapp.com/'
+            }
+          }
         }
       ],
     }
