@@ -1,3 +1,4 @@
+// import 'dotenv/config'
 import React, { useState } from 'react';
 import axios from 'axios';
 import Cookies from 'js-cookie';
@@ -7,7 +8,6 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 
 function SigninScreen(props) {
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -15,7 +15,7 @@ function SigninScreen(props) {
 
   const submitHandler = async (e) =>{
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', {
+      const response = await axios.post( process.env.REACT_APP_API_URL + '/api/auth/login', {
         email,
         password
       })

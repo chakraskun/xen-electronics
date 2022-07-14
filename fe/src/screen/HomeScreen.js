@@ -55,7 +55,7 @@ export default function HomeScreen() {
 
   const handleCheckout = async () => {
     try {
-      const response = await axios.delete(`http://localhost:3000/api/carts/checkout`, {
+      const response = await axios.delete( process.env.REACT_APP_API_URL + '/api/carts/checkout', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -75,7 +75,7 @@ export default function HomeScreen() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/products`, {
+      const response = await axios.get( process.env.REACT_APP_API_URL + '/api/products', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -89,7 +89,7 @@ export default function HomeScreen() {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/categories`, {
+      const response = await axios.get( process.env.REACT_APP_API_URL + '/api/categories', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -103,7 +103,7 @@ export default function HomeScreen() {
 
   const fetchCart = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/carts`, {
+      const response = await axios.get( process.env.REACT_APP_API_URL + '/api/carts', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -119,7 +119,7 @@ export default function HomeScreen() {
 
   const addToCart = async (id) => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/carts/add`, {
+      const response = await axios.post(process.env.REACT_APP_API_URL + '/api/carts/add', {
         product_id: id,
         quantity: 1
       }, {
@@ -145,7 +145,7 @@ export default function HomeScreen() {
 
   const removeItem = async (id) => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/carts/deduct`, {
+      const response = await axios.post( process.env.REACT_APP_API_URL + '/api/carts/deduct', {
         product_id: id,
       }, {
         headers: {
@@ -163,7 +163,7 @@ export default function HomeScreen() {
 
   const handleChangeCategories = async (value) => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/products`, {
+      const response = await axios.get( process.env.REACT_APP_API_URL + '/api/products', {
         headers: {
           Authorization: `Bearer ${token}`
         }, params: {

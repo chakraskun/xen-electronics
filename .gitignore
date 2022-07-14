@@ -32,6 +32,7 @@
 
 /be/node_modules/
 /fe/node_modules/
+/fe/.env
 
 /be/public/packs
 /be/public/packs-test
