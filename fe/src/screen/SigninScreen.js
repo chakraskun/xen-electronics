@@ -37,12 +37,12 @@ function SigninScreen(props) {
           onFinish={submitHandler}
         >
           <Form.Item
-            name="username"
-            rules={[{ required: true, message: 'Please input your Username!' }]}
+            name="Email"
+            rules={[{ required: true, message: 'Please input your Email!' }]}
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Username"
+              placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Item>
