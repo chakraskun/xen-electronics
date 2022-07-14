@@ -31,6 +31,7 @@
 /be/.byebug_history
 
 /be/node_modules/
+/fe/node_modules/
 
 /be/public/packs
 /be/public/packs-test

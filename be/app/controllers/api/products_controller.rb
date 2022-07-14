@@ -9,7 +9,7 @@ module Api
       end
       render json: ::Dto::BaseResponse.ok(
         data: {
-          products: products,
+          products: products.as_json(include: :category),
         }
       )
     end
